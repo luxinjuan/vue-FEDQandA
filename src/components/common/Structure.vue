@@ -1,8 +1,8 @@
 <template>
   <div id="structure">
     <a-layout id="components-layout-demo-top" class="layout">
-      <a-layout-header>
-        <div class="logo">前端开发</div>
+      <a-layout-header class='hearder'>
+        <div class="logo">前端专属网站</div>
         <a-menu
           theme="dark"
           mode="horizontal"
@@ -16,15 +16,14 @@
       </a-layout-header>
       <a-layout-content style="padding: 0 50px">
         <a-breadcrumb style="margin: 16px 0">
-          <!-- <a-breadcrumb-item>Home</a-breadcrumb-item>
-          <a-breadcrumb-item>List</a-breadcrumb-item>
-          <a-breadcrumb-item>App</a-breadcrumb-item>-->
         </a-breadcrumb>
         <div class="content">
           <router-view></router-view>
         </div>
       </a-layout-content>
-      <a-layout-footer style="text-align: center"></a-layout-footer>
+      <a-layout-footer class="bot"> 
+        <pre>网站首页  关于我们  联系我们 友情链接</pre>
+        <pre>网站所有权归我所属</pre></a-layout-footer>
     </a-layout>
   </div>
 </template>
@@ -54,6 +53,11 @@ export default {
 </script>
 
 <style>
+#components-layout-demo-top .hearder{
+  position:fixed;
+  width:100%;
+  z-index:2002;
+}
 #components-layout-demo-top .logo {
   width: 120px;
   height: 31px;
@@ -65,8 +69,14 @@ export default {
 #components-layout-demo-top .content {
      background: '#fff';
      padding: '24px';
+     margin-top: 80px;
      margin-left:23%;
      minHeight: '280px';
      maxWidth:'800px' 
+}
+.bot{
+ text-align: center;
+ background-color:#001529;
+ color:white;
 }
 </style>

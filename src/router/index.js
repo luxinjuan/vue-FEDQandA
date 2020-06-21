@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Home = () => import('../views/home/Home')
 const Course = () => import('../views/course/Course')
 const Community = () => import('../views/community/Community')
+
 Vue.use(Router)
 
 export default new Router({

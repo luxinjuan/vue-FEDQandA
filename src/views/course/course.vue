@@ -1,11 +1,17 @@
 <template>
-  <h2>课程</h2>
+  <bigcourse></bigcourse>
 </template>
 
 <script>
+import Bigcourse from './bigcourse/Bigcourse';
+
+
     export default {
-        name:"Course"
-    }
+       name: "Course",
+       components: {
+           Bigcourse,
+      }
+  };
 </script>
 
 <style scoped>
