@@ -60,9 +60,9 @@ export default {
 };
 </script>
 <style>
-/* .break {
+.break {
   width: 700px;
-} */
+}
 .break img {
   width: 228px;
   height: 180px;
