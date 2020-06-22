@@ -12,7 +12,7 @@
         slot="extra"
         width="272"
         alt="logo"
-        src="../../../../assets/img/touxiang1.jpg"
+        src="@/assets/img/touxiang1.jpg"
       />
       <a-list-item-meta :description="item.description">
         <a slot="title" :href="item.href">{{ item.title }}</a>
@@ -30,7 +30,7 @@ for (let i = 0; i < 23; i++) {
   listData.push({
     href: 'https://www.antdv.com/',
     title: `前端开发程序猿 ${i}`,
-    avatar: '../../../../assets/img/touxiang1.jpg',
+    avatar: '@/assets/img/touxiang1.jpg',
     description:
       '三年程序猿.',
     content:

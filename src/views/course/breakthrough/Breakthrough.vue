@@ -6,21 +6,21 @@
     </h3>
     <a-row>
       <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }">
-        <img src="../../../assets/img/vue.png" title="VUE框架+￥399"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/vue.png" title="VUE框架+￥399"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>VUE框架</div>
           <div>￥399</div>
         </div>
       </a-col>
       <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 2 }">
-        <img src="../../../assets/img/react.jpg" title="REACT框架+￥359"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/react.jpg" title="REACT框架+￥359"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>REACT框架</div>
           <div>￥359</div>
         </div>
       </a-col>
       <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">
-        <img src="../../../assets/img/angular.jpg" title="Angular框架+￥299"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/angular.jpg" title="Angular框架+￥299"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>Angular框架</div>
           <div>￥299</div>
@@ -30,21 +30,21 @@
 
     <a-row>
       <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }">
-        <img src="../../../assets/img/ES6.jpg" title="ES6课程+￥269"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/ES6.jpg" title="ES6课程+￥269"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>ES6课程</div>
           <div>￥269</div>
         </div>
       </a-col>
       <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 2 }">
-        <img src="../../../assets/img/nodejs.jpg" title="NodeJS+￥289"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/nodejs.jpg" title="NodeJS+￥289"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>NodeJS</div>
           <div>￥289</div>
         </div>
       </a-col>
       <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">
-        <img src="../../../assets/img/webpack.jpg" title="webpack+￥229"  alt="哇哦，网络跑路了"/>
+        <img src="@/assets/img/webpack.jpg" title="webpack+￥229"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>webpack</div>
           <div>￥229</div>

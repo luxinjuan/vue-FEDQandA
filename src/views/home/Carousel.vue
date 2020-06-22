@@ -3,16 +3,16 @@
     <!-- 图片轮播 -->
     <a-carousel autoplay>
       <div>
-        <img src="../../assets/img/first.jpg" alt="哇哦，网络跑路了" />
+        <img src="@/assets/img/first.jpg" alt="哇哦，网络跑路了" />
       </div>
       <div>
-        <img src="../../assets/img/second.png" alt="哇哦，网络跑路了" />
+        <img src="@/assets/img/second.png" alt="哇哦，网络跑路了" />
       </div>
       <div>
-        <img src="../../assets/img/three.jpg" alt="哇哦，网络跑路了" />
+        <img src="@/assets/img/three.jpg" alt="哇哦，网络跑路了" />
       </div>
       <div>
-        <img src="../../assets/img/four.jpeg" alt="哇哦，网络跑路了" />
+        <img src="@/assets/img/four.jpeg" alt="哇哦，网络跑路了" />
       </div>
     </a-carousel>
     <!-- tabs滑动 -->

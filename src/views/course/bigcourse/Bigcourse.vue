@@ -6,7 +6,7 @@
         style="font-size:14px;padding-left:15px;color:gray"
       >前端开发必备,前端javaScript、HTML5、CSS3技术于一身的综合大课</span>
     </h3>
-    <img class="courimg" src="../../../assets/img/course1.png" title="JavaScript+CSS+HTML+￥299" alt="哇哦，网络跑路了" />
+    <img class="courimg" src="@/assets/img/course1.png" title="JavaScript+CSS+HTML+￥299" alt="哇哦，网络跑路了" />
     <div class="foot">
       <div>前端综合大课</div>
       <div>￥299</div>
