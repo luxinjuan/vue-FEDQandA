@@ -1,0 +1,32 @@
+#jsfram {
+    width: 700px;
+  }
+  .grid {
+    position: relative;
+    width: 33.3%;
+    height: 90px;
+    text-align: center;
+  }
+  .a :hover {
+    background: grey;
+  }
+  img {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 26px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  h4 {
+    position: absolute;
+    left: 45px;
+    top: 5px;
+  }
+  p {
+    position: absolute;
+    top: 37px;
+    left: 8px;
+    font-size: 12px;
+    color: grey;
+  }

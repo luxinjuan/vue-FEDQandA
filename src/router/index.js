@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Home = () => import('../views/home/Home')
 const Course = () => import('../views/course/Course')
 const Community = () => import('../views/community/Community')
+const Source = () => import('../views/source/Source')
 
 Vue.use(Router)
 
@@ -15,18 +16,20 @@ export default new Router({
     },
     {
       path: '/home',
-      name: '首页',
       component: Home
     },
     {
       path: '/course',
-      name: '课程',
       component: Course
     },
     {
+      path: '/source',
+      component: Source
+    },
+    {
       path: '/community',
-      name: '社区',
       component: Community
     },
-  ]
+  ],
+  mode:'history'
 })

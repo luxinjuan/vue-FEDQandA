@@ -9,10 +9,12 @@
           :default-selected-keys="['1']"
           :style="{ lineHeight: '64px' }"
         >
+           <!-- <a-menu-item :key="key.title" v-for = "(item,key) in arr" @click ="itemClick">{{item.title}}</a-menu-item> -->
           <a-menu-item key="1" @click="itemClick1">首页</a-menu-item>
           <a-menu-item key="2" @click="itemClick2">教程</a-menu-item>
-          <a-menu-item key="3" @click="itemClick3">社区</a-menu-item>
-        </a-menu>
+           <a-menu-item key="3" @click="itemClick3">资源</a-menu-item>
+          <a-menu-item key="4" @click="itemClick4">社区</a-menu-item>
+        </a-menu> 
       </a-layout-header>
       <a-layout-content style="padding: 0 50px">
         <a-breadcrumb style="margin: 16px 0">
@@ -32,21 +34,32 @@
 
 export default {
   name: "Structure",
+  
   data(){
     return{
-      isActive:true
+      //  arr:[
+      //    {title:"首页"},
+      //    {title:"教程"},
+      //    {title:"资源"},
+      //    {title:"社区"},
+      //    ]
     }
   },
   methods:{
      itemClick1() {
+       console.log(this.key)
        this.$router.push('/home')
      },
      itemClick2() {
        this.$router.push('/course')
      },
-     itemClick3() {
+       itemClick3() {
+       this.$router.push('/source')
+     },
+     itemClick4() {
        this.$router.push('/community')
-     }
+     },
+    
 
    }  
 };
