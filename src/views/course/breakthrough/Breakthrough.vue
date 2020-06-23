@@ -12,14 +12,14 @@
           <div>￥399</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 2 }">
+      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }">
         <img src="@/assets/img/react.jpg" title="REACT框架+￥359"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>REACT框架</div>
           <div>￥359</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">
+      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }">
         <img src="@/assets/img/angular.jpg" title="Angular框架+￥299"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>Angular框架</div>
@@ -36,14 +36,14 @@
           <div>￥269</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 2 }">
+      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }">
         <img src="@/assets/img/nodejs.jpg" title="NodeJS+￥289"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>NodeJS</div>
           <div>￥289</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 2 }">
+      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }">
         <img src="@/assets/img/webpack.jpg" title="webpack+￥229"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>webpack</div>
@@ -60,18 +60,15 @@ export default {
 };
 </script>
 <style>
-.break {
-  width: 700px;
-}
 .break img {
-  width: 228px;
-  height: 180px;
+  width: 273px;
+  height: 200px;
   -webkit-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
 }
 .foot {
   height: 40px;
-  width: 220px;
+  width: 273px;
   background-color: white;
   -webkit-border-radius: 0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;

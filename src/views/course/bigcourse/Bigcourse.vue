@@ -25,25 +25,22 @@ export default {
 };
 </script>
 <style scoped>
-.cour {
-  width: 700px;
-}
 .courimg {
-  width: 700px;
-  height: 250px;
+  width: 100%;
+  height: 300px;
   -webkit-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
 }
 .foot {
   height: 40px;
-  width: 700px;
+  width: 100%;
   background-color: white;
   -webkit-border-radius: 0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;
   position: relative;
 }
 .foot :first-child {
-  width: 300px;
+  width: 30%;
   font-size: 16px;
   padding-top: 5px;
   padding-left: 10px;
@@ -54,6 +51,6 @@ export default {
   font-size: 16px;
   color: red;
   padding-top: 5px;
-  margin-left: 90%;
+  margin-left: 94%;
 }
 </style>

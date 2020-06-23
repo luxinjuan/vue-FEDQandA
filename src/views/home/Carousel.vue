@@ -53,10 +53,10 @@ export default {
 }
 
 .ant-carousel >>> .slick-slide img {
-  height: 280px;
-  width: 700px;
+  height: 300px;
+  width: 100%;
 }
 .tabs {
-  width: 700px;
+  width: 100%;
 }
 </style>

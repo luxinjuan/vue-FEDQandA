@@ -4,27 +4,21 @@
       <a href="https://v3.bootcss.com/">
         <a-card-grid class="grid">
           <img src="@/assets/img/uiimg/bootstrap.png" />
-          <h4>
-            Bootstrap
-          </h4>
+          <h4>Bootstrap</h4>
           <p>最受欢迎的HTML、CSS和JS框架，用于开发响应式布局、移动设备优先的WEB应用</p>
         </a-card-grid>
       </a>
       <a href="https://element.eleme.cn/#/zh-CN">
         <a-card-grid class="grid">
           <img src="@/assets/img/uiimg/element.png" />
-          <h4>
-           Element
-          </h4>
+          <h4>Element</h4>
           <p>饿了么前端团队开发的基于VUE2.0的桌面端组件库。</p>
         </a-card-grid>
       </a>
       <a href="https://ant.design/index-cn">
         <a-card-grid class="grid">
           <img src="@/assets/img/uiimg/ant.png" />
-          <h4>
-            Ant Design
-          </h4>
+          <h4>Ant Design</h4>
           <p>服务于企业级产品的设计体系，通过模块化的解决方案，让设计者专注于更好的用户体验。</p>
         </a-card-grid>
       </a>
