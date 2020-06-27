@@ -69,6 +69,7 @@ export default {
 .foot {
   height: 40px;
   width: 273px;
+  margin-left: 10px;
   background-color: white;
   -webkit-border-radius: 0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;

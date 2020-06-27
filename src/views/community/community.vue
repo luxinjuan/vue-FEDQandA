@@ -1,11 +1,19 @@
 <template>
-  <h2>社区</h2>
+  <div>
+    <search></search>
+    <tabbutton></tabbutton> 
+  </div>
 </template>
-
 <script>
-    export default {
-        name:"Community"
-    }
+import Tabbutton from "./tabbutton/Tabbutton";
+import Search from "./search/Search";
+export default {
+  name: "Community",
+  components: {
+    Tabbutton,
+    Search
+  }
+};
 </script>
 
 <style scoped>

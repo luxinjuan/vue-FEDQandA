@@ -28,7 +28,7 @@
 const listData = [];
 for (let i = 0; i < 23; i++) {
   listData.push({
-    href: 'https://www.antdv.com/',
+    // href: 'https://www.antdv.com/',
     title: `前端开发程序猿 ${i}`,
     avatar: '@/assets/img/touxiang1.jpg',
     description:
