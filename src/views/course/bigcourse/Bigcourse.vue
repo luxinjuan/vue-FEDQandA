@@ -11,17 +11,12 @@
       <div>前端综合大课</div>
       <div>￥299</div>
     </div>
-    <breakthrough></breakthrough>
   </div>
 </template>
 
 <script>
-import Breakthrough from '.././breakthrough/Breakthrough'
 export default {
   name: "Bigcourse",
-  components:{
-    Breakthrough
-  }
 };
 </script>
 <style scoped>

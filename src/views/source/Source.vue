@@ -1,17 +1,24 @@
 <template>
+<div>
     <jsfram></jsfram>
-    <!-- <uifram></uifram> -->
-
+    <uiframe></uiframe>
+    <buildframe></buildframe>
+    <moduleload></moduleload>
+</div>
 </template>
 
 <script>
 import Jsfram from "./jsframe/Jsframe";
-// import Uiframe from "./uiframe/Uiframe";
+import Uiframe from "./uiframe/Uiframe";
+import Buildframe from "./buildframe/Buildframe";
+import Moduleload from "./moduleload/Moduleload";
 export default {
   name: "Source",
   components: {
     Jsfram,
-    // Uiframe
+    Uiframe,
+    Buildframe,
+    Moduleload
   }
 };
 </script>

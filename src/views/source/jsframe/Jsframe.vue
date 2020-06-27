@@ -67,18 +67,15 @@
         </a-card-grid>
       </a>
     </a-card>
-    <uiframe></uiframe>
   </div>
 </template>
 
 <script>
- import Uiframe from "../uiframe/Uiframe"
 export default {
   name: "Jsfram",
-  components:{
-      Uiframe
-  }
+ 
 };
+
 </script>
 
 <style scoped>
