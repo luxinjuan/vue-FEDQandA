@@ -33,7 +33,7 @@
     </div>
     <!-- </div> -->
     <div>
-      <a-textarea id="textarea" v-model="message" placeholder="提问内容" :rows="10" />
+      <a-textarea id="textarea" v-model="message" placeholder="提问内容" :rows="17" />
     </div>
     <a-divider />
     <a-button id="but" type="primary">发布问题</a-button>
@@ -57,6 +57,7 @@ export default {
 <style>
 h2 {
   background: white;
+   border-radius: 5px;
   height: 50px;
   padding-top: 10px;
   margin-bottom: 10px;
@@ -91,12 +92,14 @@ img:hover {
 .icons-list {
   margin-top: 20px;
   background: white;
-  height: 25px;
+  height: 30px;
   border: 2px slid gray;
   padding-left: 10px;
+   padding-top: 5px;
+  border-radius: 5px;
 }
 .icons-list >>> .anticon {
-  font-size: 30px;
+  font-size: 35px;
 }
 .icons-list >>> .anticon:hover {
   border: 1px solid #777;
