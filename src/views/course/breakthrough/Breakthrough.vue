@@ -5,21 +5,21 @@
       <span style="font-size:14px;padding-left:15px;color:gray">如果你有一定基础，或已从事前端工作，可根据自身情况弥补短板。</span>
     </h3>
     <a-row>
-      <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }">
+      <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }" @click="detail">
         <img src="@/assets/img/vue.png" title="VUE框架+￥399"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>VUE框架</div>
           <div>￥399</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }">
+      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }" @click="detail">
         <img src="@/assets/img/react.jpg" title="REACT框架+￥359"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>REACT框架</div>
           <div>￥359</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }">
+      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }" @click="detail">
         <img src="@/assets/img/angular.jpg" title="Angular框架+￥299"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>Angular框架</div>
@@ -29,21 +29,21 @@
     </a-row>
 
     <a-row>
-      <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }">
+      <a-col :xs="{ span: 0, offset: 0 }" :lg="{ span: 6, offset: 0 }" @click="detail">
         <img src="@/assets/img/ES6.jpg" title="ES6课程+￥269"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>ES6课程</div>
           <div>￥269</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }">
+      <a-col :xs="{ span: 11, offset: 1 }" :lg="{ span: 6, offset: 3 }" @click="detail">
         <img src="@/assets/img/nodejs.jpg" title="NodeJS+￥289"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>NodeJS</div>
           <div>￥289</div>
         </div>
       </a-col>
-      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }">
+      <a-col :xs="{ span: 5, offset: 1 }" :lg="{ span: 6, offset: 3 }" @click="detail">
         <img src="@/assets/img/webpack.jpg" title="webpack+￥229"  alt="哇哦，网络跑路了"/>
         <div class="foot">
           <div>webpack</div>
@@ -54,9 +54,18 @@
   </div>
 </template>
 <script>
-
+import Buy from "../../buy/Buy"
 export default {
   name: "Breakthronugh",
+  components:{
+    Buy
+  },
+  methods:{
+    detail(){
+      this.$router.push("/buy")
+    }
+    
+  }
 };
 </script>
 <style>
@@ -69,7 +78,7 @@ export default {
 .foot {
   height: 40px;
   width: 273px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   background-color: white;
   -webkit-border-radius: 0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;
