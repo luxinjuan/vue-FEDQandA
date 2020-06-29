@@ -5,6 +5,7 @@
           enter-button="Search"
           size="large"
           @search="onSearch"
+          class="sear"
         />
   </div>
 </template>
@@ -22,4 +23,7 @@ export default {
 };
 </script>
 <style>
+.sear{
+   margin-top: 10px;
+}
 </style>

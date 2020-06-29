@@ -21,7 +21,8 @@
         <recommend></recommend>
       </a-tab-pane>
       <a-tab-pane key="2" tab="精选" force-render>
-        <router-view></router-view>
+         <recommend></recommend>
+        <!-- <router-view></router-view> -->
       </a-tab-pane>
     </a-tabs>
   </div>
@@ -50,6 +51,7 @@ export default {
 .ant-carousel >>> .slick-slide {
   text-align: center;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .ant-carousel >>> .slick-slide img {

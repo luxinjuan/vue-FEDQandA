@@ -19,7 +19,7 @@
         <a-button type="primary" size="large">购买</a-button>
       </div>
     </div>
-    <div id="foot">
+    <div id="foot1">
       <div id="icon">
         <a-icon type="heart" theme="twoTone" two-tone-color="#eb2f96" />
         <a-icon type="heart" theme="twoTone" two-tone-color="#eb2f96" />
@@ -69,7 +69,7 @@ img {
   margin-left: 90%;
   margin-top: 15%;
 }
-#foot {
+#foot1 {
   position: relative;
 }
 #icon {

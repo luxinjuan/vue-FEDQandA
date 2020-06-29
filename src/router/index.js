@@ -7,6 +7,7 @@ const Community = () => import('../views/community/Community')
 const Source = () => import('../views/source/Source')
 const Ask = () => import('../views/ask/Ask')
 const Buy = () => import('../views/buy/Buy')
+const Login = () => import('../views/login/Login')
 
 Vue.use(Router)
 
@@ -40,6 +41,10 @@ export default new Router({
       path: '/buy',
       component: Buy
     },
+    {
+      path: '/login',
+      component: Login
+    }
   ],
   mode:'history'
 })

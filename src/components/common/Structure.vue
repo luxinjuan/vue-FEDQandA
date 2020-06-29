@@ -14,10 +14,12 @@
           <a-menu-item key="2" @click="itemClick2">教程</a-menu-item>
           <a-menu-item key="3" @click="itemClick3">资源</a-menu-item>
           <a-menu-item key="4" @click="itemClick4">社区</a-menu-item>
+          <a-button class="btn" @click="login">登录</a-button>
+          <a-button >注册</a-button>
         </a-menu>
       </a-layout-header>
       <a-layout-content class="conentfather">
-        <!-- <a-breadcrumb style="margin: 16px 0"></a-breadcrumb> -->
+        <!-- <a-breadcrumb style="margin: 16px 0">ttttt</a-breadcrumb> -->
         <div class="content">
           <router-view></router-view>
         </div>
@@ -46,7 +48,6 @@ export default {
   },
   methods: {
     itemClick1() {
-      console.log(this.key);
       this.$router.push("/home");
     },
     itemClick2() {
@@ -57,6 +58,9 @@ export default {
     },
     itemClick4() {
       this.$router.push("/community");
+    },
+    login(){
+      this.$router.push("/login")
     }
   }
 };
@@ -79,7 +83,7 @@ export default {
 #components-layout-demo-top .content {
   background: "#fff";
   padding: "24px";
-  margin-top: 80px; 
+  margin-top: 64px; 
   width:80%;
   transform: translate(12.5%);
 }
@@ -87,5 +91,9 @@ export default {
   text-align: center;
   background-color: #001529;
   color: white;
+}
+.btn{
+  margin-left:38%;
+  margin-right: 20px;
 }
 </style>

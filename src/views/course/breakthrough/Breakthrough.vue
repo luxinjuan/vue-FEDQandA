@@ -54,17 +54,18 @@
   </div>
 </template>
 <script>
-import Buy from "../../buy/Buy"
+import Subject from "../../../components/common/Subject";
+import Buy from "../../buy/Buy";
 export default {
   name: "Breakthronugh",
-  components:{
+  components: {
+    Subject,
     Buy
   },
-  methods:{
-    detail(){
-      this.$router.push("/buy")
+  methods: {
+    detail() {
+      this.$router.push("/buy");
     }
-    
   }
 };
 </script>
@@ -75,6 +76,7 @@ export default {
   -webkit-border-radius: 10px 10px 0px 0px;
   border-radius: 10px 10px 0px 0px;
 }
+
 .foot {
   height: 40px;
   width: 273px;
