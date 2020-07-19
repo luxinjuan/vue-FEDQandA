@@ -7,11 +7,12 @@
 <script>
 import Tabbutton from "./tabbutton/Tabbutton";
 import Search from "./search/Search";
+
 export default {
   name: "Community",
   components: {
     Tabbutton,
-    Search
+    Search,
   }
 };
 </script>

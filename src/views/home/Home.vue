@@ -4,7 +4,6 @@
 
 <script>
 import Carousel from './Carousel';
-
     export default {
         name:"Home",
         components:{

@@ -14,6 +14,7 @@
           <a-menu-item key="2" @click="itemClick2">教程</a-menu-item>
           <a-menu-item key="3" @click="itemClick3">资源</a-menu-item>
           <a-menu-item key="4" @click="itemClick4">社区</a-menu-item>
+          <a-menu-item key="5" @click="itemClick5">笔试分类</a-menu-item>
           <a-button class="btn" @click="login">登录</a-button>
           <a-button >注册</a-button>
         </a-menu>
@@ -38,12 +39,6 @@ export default {
 
   data() {
     return {
-      //  arr:[
-      //    {title:"首页"},
-      //    {title:"教程"},
-      //    {title:"资源"},
-      //    {title:"社区"},
-      //    ]
     };
   },
   methods: {
@@ -59,6 +54,9 @@ export default {
     itemClick4() {
       this.$router.push("/community");
     },
+    itemClick5() {
+      this.$router.push("/exam");
+    },
     login(){
       this.$router.push("/login")
     }
@@ -66,7 +64,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #components-layout-demo-top .hearder {
   position: fixed;
   width: 100%;
@@ -93,7 +91,7 @@ export default {
   color: white;
 }
 .btn{
-  margin-left:38%;
+  margin-left:33%;
   margin-right: 20px;
 }
 </style>

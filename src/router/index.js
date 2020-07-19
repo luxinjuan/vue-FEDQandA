@@ -8,6 +8,7 @@ const Source = () => import('../views/source/Source')
 const Ask = () => import('../views/ask/Ask')
 const Buy = () => import('../views/buy/Buy')
 const Login = () => import('../views/login/Login')
+const Exam = () => import('../views/exam/Exam')
 
 Vue.use(Router)
 
@@ -44,6 +45,10 @@ export default new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/exam',
+      component: Exam
     }
   ],
   mode:'history'
