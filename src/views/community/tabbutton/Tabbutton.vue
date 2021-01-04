@@ -28,7 +28,7 @@ export default {
     callback(key) {
       console.log(key);
       if (key == 5) {
-        this.$router.push("/ask");
+        this.$router.push("/Ask");
       }
     },
     onSearch(value) {
@@ -37,7 +37,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 #tabbutton {
   margin-top: 15px;
 }

@@ -22,7 +22,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .sear{
    margin-top: 10px;
 }

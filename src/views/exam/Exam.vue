@@ -56,27 +56,14 @@ export default {
         },
         //表格每一项数据的属性
         header: [
-          //多选操作
-          //   {
-          //     prop: "selection",
-          //     width: "55"
-          //   },
           {
             prop: "basic",
             label: "计算机基础"
-            // width: "180",
-            // sortable:true
           },
           {
             prop: "program",
             label: "编程语言"
           },
-          //   {
-          //     prop: "img",
-          //     label: "头像",
-          //     width: "180",
-          //     isImg: true
-          //   },
           {
             prop: "skill",
             label: "专业技能"
@@ -85,38 +72,8 @@ export default {
             prop: "ability",
             label: "通用能力"
           }
-          //操作栏
-          //    {
-          //     prop: "options",
-          //     label: "删除",
-          //     fixed: "right"
-          //   }
         ]
-        //操作的按钮
-        // options: [
-        //   {
-        //     type: "success",
-        //     label: "删除",
-        //     event: this.checkPass,
-        //     isShow: item => {
-        //       return item.status == 0 ? false : true;
-        //     }
-        //   },
-        //   {
-        //     type: "danger",
-        //     label: "编辑",
-        //     event: this.checkNoPass,
-        //     isShow: item => {
-        //       return item.status == 1 ? false : true;
-        //     }
-        //   }
-        // ]
       },
-    //    pagination:{
-    //     pageSize:10,
-    //     pageNum:1,
-    //     total:7
-    //   }
     };
   },
   methods: {
@@ -126,9 +83,6 @@ export default {
     checkPass(val) {
       console.log(val);
     }
-    // checkNoPass(val) {
-    //   console.log(val);
-    // }
   }
 };
 </script>

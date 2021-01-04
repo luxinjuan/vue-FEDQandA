@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .loginIn {
   background: white;
   border: 1px solid white;

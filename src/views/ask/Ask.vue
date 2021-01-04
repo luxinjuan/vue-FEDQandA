@@ -2,23 +2,7 @@
   <div id="ask">
     <h2>提问问题</h2>
     <a-input size="large" placeholder="请输入标题，用问号结尾" />
-    <!-- <div id="image"> -->
-    <!-- <img src="@/assets/img/icon/标题.png" title="标题" />
-      <img src="@/assets/img/icon/加粗.png" title="加粗" />
-      <img src="@/assets/img/icon/斜体.png" title="斜体" /> 
-      <img src="@/assets/img/icon/删除线.png" title="删除线" />
-      
-      <img src="@/assets/img/icon/分割线.png" title="分割线" />
-      <img src="@/assets/img/icon/左引用.png" title="左引用" />
-      
-      <img src="@/assets/img/icon/无序列表.png" title="无序列表" />
-      <img src="@/assets/img/icon/水平对齐.png" title="水平对齐" />
-     
-      <img src="@/assets/img/icon/图片.png" title="图片" />
-      <img src="@/assets/img/icon/链接.png" title="链接" />
-    <img src="@/assets/img/icon/代码块.png" title="代码块" />-->
-    <div class="icons-list">
-      <!-- <a-icon type="font-size" @click="fontsize" /> -->
+    <!-- <div class="icons-list">
       <a-icon type="bold" @click="bold" />
       <a-icon type="italic" />
       <a-icon type="strikethrough" />
@@ -31,33 +15,62 @@
       <a-icon type="link" />
       <a-icon type="unordered-list" />
     </div>
-    <!-- </div> -->
     <div>
       <a-textarea id="textarea" v-model="message" placeholder="提问内容" :rows="17" />
-    </div>
+    </div> -->
+    <editor
+      init="tinymceInit"
+      key="tinymceFlag"
+    ></editor>
     <a-divider />
     <a-button id="but" type="primary">发布问题</a-button>
   </div>
 </template>
 <script>
+import tinymce from "tinymce/tinymce";
+import Editor from "@tinymce/tinymce-vue";
+import "tinymce/themes/silver";
+import './import-all'
+
 export default {
   name: "Ask",
   data() {
     return {
-      message: ""
+      // message: "",
+      tinymceFlag: 1,
+      tinymceInit: {},
     };
   },
   methods: {
-    bold() {
-      console.log(this.message);
-    }
-  }
+    // bold() {
+    //   // console.log(this.message);
+    // }
+  },
+  created() {
+    this.tinymceInit = {
+      language:'zh_CN',
+      skin: 'oxide-dark',
+      height: 500,
+      selector: 'textarea',
+      width: undefined,
+      browser_spellcheck: true, // 拼写检查
+      branding: false, // 去水印
+      elementpath: false, // 禁用编辑器底部的状态栏
+      statusbar: false, // 隐藏编辑器底部的状态栏
+      paste_data_images: true, // 允许粘贴图像
+      menubar: true, // 隐藏最上方menu
+      toolbar: 'undo redo | styleselect | bold italic | link image',
+    };
+  },
+  activated() {
+    this.tinymceFlag++;
+  },
 };
 </script>
 <style>
 h2 {
   background: white;
-   border-radius: 5px;
+  border-radius: 5px;
   height: 50px;
   padding-top: 10px;
   margin-bottom: 10px;
@@ -95,7 +108,7 @@ img:hover {
   height: 30px;
   border: 2px slid gray;
   padding-left: 10px;
-   padding-top: 5px;
+  padding-top: 5px;
   border-radius: 5px;
 }
 .icons-list >>> .anticon {

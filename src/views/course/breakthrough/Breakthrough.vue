@@ -69,7 +69,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .break img {
   width: 273px;
   height: 200px;

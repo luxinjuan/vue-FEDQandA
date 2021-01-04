@@ -9,18 +9,16 @@
           :default-selected-keys="['1']"
           :style="{ lineHeight: '64px' }"
         >
-          <!-- <a-menu-item :key="key.title" v-for = "(item,key) in arr" @click ="itemClick">{{item.title}}</a-menu-item> -->
           <a-menu-item key="1" @click="itemClick1">首页</a-menu-item>
           <a-menu-item key="2" @click="itemClick2">教程</a-menu-item>
           <a-menu-item key="3" @click="itemClick3">资源</a-menu-item>
           <a-menu-item key="4" @click="itemClick4">社区</a-menu-item>
           <a-menu-item key="5" @click="itemClick5">笔试分类</a-menu-item>
           <a-button class="btn" @click="login">登录</a-button>
-          <a-button >注册</a-button>
+          <!-- <a-button class="btn" @click="register">注册</a-button> -->
         </a-menu>
       </a-layout-header>
       <a-layout-content class="conentfather">
-        <!-- <a-breadcrumb style="margin: 16px 0">ttttt</a-breadcrumb> -->
         <div class="content">
           <router-view></router-view>
         </div>
@@ -59,7 +57,10 @@ export default {
     },
     login(){
       this.$router.push("/login")
-    }
+    },
+    // register(){
+    //   this.$router.push("/register")
+    // }
   }
 };
 </script>
@@ -91,7 +92,7 @@ export default {
   color: white;
 }
 .btn{
-  margin-left:33%;
-  margin-right: 20px;
+  margin-left:30%;
+
 }
 </style>
